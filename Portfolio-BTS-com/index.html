@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio créatif de [Votre nom] - Photographie, vidéo et communication digitale">
+  <meta name="keywords" content="portfolio, photographie, vidéo, communication, créatif">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Stellaire - Créations Visuelles</title>
+</head>
+<body>
+  
+  <audio id="bg-music" src="audio/Midnas Lament  Twilight Princess [Remastered].mp3" loop preload="metadata"></audio>
+  
+  <!-- Contrôles audio futuristes -->
+  <button id="play-music" class="btn play-btn" aria-label="Lancer la musique d'ambiance">
+    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="#00d4ff" stroke="#ffffff" stroke-width="1.5"/>
+      <polygon id="play-icon" points="9,7 9,17 17,12" fill="#ffffff"/>
+      <rect id="pause-icon" x="8" y="7" width="2" height="10" fill="#ffffff" style="display:none"/>
+      <rect id="pause-icon2" x="14" y="7" width="2" height="10" fill="#ffffff" style="display:none"/>
+    </svg>
+  </button>
+  
+  <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5" aria-label="Contrôle du volume de la musique">
+  
+  <!-- En-tête avec navigation -->
+  <header>
+    <h1>LACOUR Maxime</h1>
+    <nav class="header-buttons" aria-label="Navigation principale">
+      <button class="btn nav-btn" id="home-btn" aria-label="Retour à l'accueil">🏠 Accueil</button>
+      <button class="btn nav-btn" id="projects-btn" aria-label="Voir les projets">📸 Projets</button>
+      <button class="btn nav-btn" id="videos-btn" aria-label="Voir les vidéos">🎬 Vidéos</button>
+    </nav>
+  </header>
+  <!-- Contenu principal -->
+  <main>
+    <section id="welcome-zone" role="banner">
+      <div class="welcome-content">
+        <div class="welcome-text">
+          <h2>Bienvenue dans mon univers créatif !</h2>
+          <p>
+            Photographie, vidéo, storytelling : je transforme l'instant en message, et le message en impact..
+            <br><br>
+            <em>Activez la musique d'ambiance pour une expérience immersive complète.</em>
+          </p>
+          <button class="btn" id="show-projects" aria-label="Découvrir mes projets créatifs">
+            🚀 Découvrir mes créations
+          </button>
+        </div>
+        
+        <!-- Image de profil intégrée -->
+        <div class="welcome-image">
+          <img src="images/20250917_190753.jpg" alt="Portrait créatif de l'artiste - Maxime Lacour" id="welcome-img" loading="lazy">
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section Photographie -->
+  <section id="project-zone" role="main" aria-hidden="true">
+    <div class="project-container">
+      <article class="project-header">
+        <h2>Passion Photographique</h2>
+        <p>
+          Amoureux de la photographie et des réseaux sociaux, je capture l'essence des moments uniques. 
+          Voici deux de mes clichés favoris qui illustrent ma vision artistique et ma passion pour 
+          l'art visuel moderne.
+        </p>
+      </article>
+      
+      <div class="project-gallery">
+        <div class="project-item">
+          <img src="images/Screenshot_20250721_174704_Instagram.jpg" 
+               alt="Photographie artistique du ciel durant une séance de sport"
+               loading="lazy">
+          <div class="project-caption">
+            <h3>Ciel Majestueux</h3>
+            <p>Prise lors de ma séance de sport quotidienne, j'ai été captivé par 
+            la beauté majestueuse du ciel. Cette composition naturelle méritait d'être immortalisée.</p>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <img src="images/20240719_225745.jpg" 
+               alt="Ambiance captée lors d'un événement Made in Sud"
+               loading="lazy">
+          <div class="project-caption">
+            <h3>Énergie Made in Sud</h3>
+            <p>Capturée durant une production vidéo pour Made in Sud, cette image 
+            reflète parfaitement l'atmosphère électrisante de l'événement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Vidéographie -->
+  <section id="vidéo-zone" role="main" aria-hidden="true">
+    <div class="video-row">
+      <video id="project-vidéo-1" controls preload="metadata" 
+             aria-label="Vidéo promotionnelle Cache ton Cailloux 2021">
+        <source src="vidéo/FB_VID_3834401738753440594.mp4" type="video/mp4">
+        <p>Votre navigateur ne supporte pas les vidéos HTML5.</p>
+      </video>
+      
+      <video id="project-video" controls preload="metadata"
+             aria-label="Vidéo promotionnelle Made in Sud 2024">
+        <source src="vidéo/VID-20250722-WA0000.mp4" type="video/mp4">
+        <p>Votre navigateur ne supporte pas les vidéos HTML5.</p>
+      </video>
+    </div>
+    
+    <article id="video-text">
+      <h2>Créations Vidéographiques</h2>
+      <p>
+        Voici deux productions vidéo qui illustrent mon savoir-faire en montage et ma capacité 
+        à créer du contenu engageant pour différentes marques et événements.
+        <br><br>
+        <strong>Projet 1 :</strong> Réalisation pour le compte Facebook de "Cache ton Cailloux" 
+        à La Crau en 2021 - Une approche créative pour promouvoir l'événement local.
+        <br><br>
+        <strong>Projet 2 :</strong> Production pour la page Made in Sud en 2024 - 
+        Captation de l'ambiance festive et de l'énergie de cet événement emblématique.
+        <br><br>
+        Ces projets reflètent ma passion pour la narration visuelle et mon expertise 
+        en communication digitale.
+      </p>
+    </article>
+  </section>
+
+  <!-- Scripts pour les interactions -->
+  <script>
+    // Contrôles audio avancés
+    const playBtn = document.getElementById('play-music');
+    const audio = document.getElementById('bg-music');
+    const volumeControl = document.getElementById('volume-control');
+    const playIcon = document.getElementById('play-icon');
+    const pauseIcon = document.getElementById('pause-icon');
+    const pauseIcon2 = document.getElementById('pause-icon2');
+
+    function setPlayIcon(isPlaying) {
+      if (isPlaying) {
+        // Afficher icône pause
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'block';
+        pauseIcon2.style.display = 'block';
+        playBtn.setAttribute('aria-label', 'Mettre en pause la musique');
+      } else {
+        // Afficher icône play
+        playIcon.style.display = 'block';
+        pauseIcon.style.display = 'none';
+        pauseIcon2.style.display = 'none';
+        playBtn.setAttribute('aria-label', 'Lancer la musique d\'ambiance');
+      }
+    }
+
+    playBtn.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.volume = volumeControl.value;
+        audio.play().catch(e => console.log('Lecture audio non autorisée'));
+        setPlayIcon(true);
+      } else {
+        audio.pause();
+        setPlayIcon(false);
+      }
+    });
+
+    volumeControl.addEventListener('input', function() {
+      audio.volume = this.value;
+    });
+
+    audio.addEventListener('pause', () => setPlayIcon(false));
+    audio.addEventListener('play', () => setPlayIcon(true));
+    setPlayIcon(false);
+
+    // Navigation fluide entre sections
+    function showSection(targetSection) {
+      const sections = ['main', 'project-zone', 'vidéo-zone'];
+      const img = document.getElementById('welcome-img');
+      
+      sections.forEach(section => {
+        const element = document.getElementById(section) || document.querySelector(section);
+        if (element) {
+          if (section === targetSection) {
+            element.style.display = 'block';
+            element.setAttribute('aria-hidden', 'false');
+            // Animation d'apparition
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              element.style.transition = 'all 0.6s ease';
+              element.style.opacity = '1';
+              element.style.transform = 'translateY(0)';
+            }, 10);
+          } else {
+            element.style.display = 'none';
+            element.setAttribute('aria-hidden', 'true');
+          }
+        }
+      });
+      
+      // Gestion de l'image de profil
+      if (targetSection === 'main') {
+        img.style.display = 'block';
+      } else {
+        img.style.display = 'none';
+      }
+    }
+
+    // Gestionnaires d'événements pour la navigation
+    document.getElementById('show-projects').addEventListener('click', () => showSection('project-zone'));
+    
+    // Boutons de navigation du header
+    document.getElementById('home-btn').addEventListener('click', () => showSection('main'));
+    document.getElementById('projects-btn').addEventListener('click', () => showSection('project-zone'));
+    document.getElementById('videos-btn').addEventListener('click', () => showSection('vidéo-zone'));
+
+    // Animation au défilement (optionnel)
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observer les éléments à animer
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Amélioration de l'accessibilité clavier
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        showSection('main');
+      }
+    });
+  </script>
+
+  <!-- Lightbox pour afficher les images en grand -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption"></div>
+      <div class="lightbox-controls">
+        <button class="lightbox-prev" onclick="previousImage()">❮</button>
+        <button class="lightbox-next" onclick="nextImage()">❯</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Lightbox functionality
+    let currentImageIndex = 0;
+    let lightboxImages = [];
+
+    function initializeLightbox() {
+      // Récupérer toutes les images des projets
+      const projectImages = document.querySelectorAll('.project-item img');
+      lightboxImages = Array.from(projectImages);
+      
+      // Ajouter l'événement click à chaque image
+      projectImages.forEach((img, index) => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => openLightbox(index));
+      });
+    }
+
+    function openLightbox(index) {
+      currentImageIndex = index;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.querySelector('.lightbox-caption');
+      
+      const selectedImg = lightboxImages[index];
+      lightboxImg.src = selectedImg.src;
+      lightboxImg.alt = selectedImg.alt;
+      
+      // Récupérer la légende depuis le parent
+      const caption = selectedImg.closest('.project-item').querySelector('.project-caption h3');
+      lightboxCaption.textContent = caption ? caption.textContent : '';
+      
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Empêcher le scroll
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Réactiver le scroll
+    }
+
+    function previousImage() {
+      currentImageIndex = (currentImageIndex - 1 + lightboxImages.length) % lightboxImages.length;
+      openLightbox(currentImageIndex);
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % lightboxImages.length;
+      openLightbox(currentImageIndex);
+    }
+
+    // Fermer avec Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowLeft') {
+        previousImage();
+      } else if (e.key === 'ArrowRight') {
+        nextImage();
+      }
+    });
+
+    // Initialiser la lightbox après le chargement
+    document.addEventListener('DOMContentLoaded', initializeLightbox);
+  </script>
+</body>
+</html>
